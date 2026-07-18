@@ -1,0 +1,38 @@
+@import "tailwindcss";
+@plugin "@tailwindcss/typography";
+
+@font-face {
+  font-family: "Pretendard Variable";
+  src: url("/fonts/PretendardVariable.woff2") format("woff2-variations");
+  font-weight: 45 920;
+  font-style: normal;
+  font-display: swap;
+}
+
+/* Tailwind v4: @theme에 리터럴 값을 직접 정의 → bg-primary/text-accent 등 유틸리티와
+   --color-* CSS 변수(예: border-accent/25 같은 알파 유틸)가 함께 생성된다. 순환 참조 금지. */
+@theme {
+  --color-primary: #1d4d2d;
+  --color-accent: #db5e25;
+  --color-soft: #fed5c6;
+  --color-cream: #fdf3ec;
+  --color-surface: #ffffff;
+  --color-ink: #1b2b20;
+  --color-muted: #7a6a60;
+  --color-border: #eaddd3;
+
+  --color-success: #1d4d2d;
+  --color-success-bg: #e7f0e9;
+  --color-danger: #c0392b;
+  --color-danger-bg: #fbe6e3;
+  --color-warning: #b7791f;
+  --color-warning-bg: #fbefd3;
+
+  --font-sans: "Pretendard Variable", ui-sans-serif, system-ui, "Apple SD Gothic Neo", sans-serif;
+}
+
+html, body {
+  background: var(--color-cream);
+  color: var(--color-ink);
+  font-family: var(--font-sans);
+}

@@ -1,0 +1,1 @@
+ALTER TABLE `entries` ADD `team_name` text DEFAULT '' NOT NULL;

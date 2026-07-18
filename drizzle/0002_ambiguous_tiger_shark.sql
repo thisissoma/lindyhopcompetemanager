@@ -1,0 +1,1 @@
+ALTER TABLE `competitions` ADD `collects_judge_comment` integer DEFAULT false NOT NULL;

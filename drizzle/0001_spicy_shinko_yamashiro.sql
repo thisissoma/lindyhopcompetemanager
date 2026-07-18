@@ -1,0 +1,1 @@
+ALTER TABLE `competitions` ADD `logo_url` text DEFAULT '' NOT NULL;
